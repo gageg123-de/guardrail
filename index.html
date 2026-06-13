@@ -499,34 +499,38 @@
     .cta{
       border:1px solid var(--line);
       border-radius:12px;
-      background:
-        radial-gradient(circle at 12% 20%,rgba(240,90,59,.16),transparent 32%),
-        radial-gradient(circle at 84% 18%,rgba(85,194,163,.12),transparent 34%),
-        var(--panel);
-      padding:38px;
+      background:var(--panel);
+      padding:34px;
       text-align:center;
-      box-shadow:var(--shadow);
+      box-shadow:0 18px 54px rgba(0,0,0,.26);
     }
+    .cta h2{margin-bottom:12px}
     .cta p{
-      max-width:720px;
-      margin:0 auto 24px;
+      max-width:560px;
+      margin:0 auto 22px;
       color:var(--muted);
-      font-size:18px;
-      line-height:1.65;
+      font-size:17px;
+      line-height:1.6;
     }
-    .disclaimer{
-      max-width:760px;
+    .cta p.disclaimer{
+      max-width:720px;
       margin:22px auto 0;
+      padding-top:14px;
+      border-top:1px solid var(--line);
+      color:var(--faint);
+      font-size:11px;
+      line-height:1.55;
+    }
+    .cta p.privacy-note{
+      max-width:620px;
+      margin:18px auto 0;
       color:var(--faint);
       font-size:13px;
-      line-height:1.6;
+      line-height:1.55;
     }
-    .privacy-note{
-      max-width:620px;
-      margin:16px auto 0;
-      color:var(--muted);
-      font-size:14px;
-      line-height:1.6;
+    .cta .button{
+      margin-top:6px;
+      margin-bottom:2px;
     }
     .scroll-zoom{
       opacity:.72;
@@ -913,11 +917,10 @@
     <section id="start">
       <div class="container">
         <div class="cta scroll-zoom">
-          <h2>Help shape the first real version.</h2>
+          <h2>Join the early access list.</h2>
           <p>
-            We are talking with early users, accountability partners, sponsors,
-            coaches, and clinicians to make sure Guardrail is useful, respectful,
-            and safe before broader release.
+            We are inviting a small group of early testers to try the first SMS
+            accountability pilot and give honest feedback.
           </p>
           <a
             class="button primary"
@@ -926,9 +929,8 @@
             Request early access
           </a>
           <p class="privacy-note">
-            Early access is for product validation. Your responses will not be
-            shared publicly, and selected testers will be contacted before any
-            live SMS pilot.
+            Your responses will not be shared publicly. Selected testers will be
+            contacted before any live SMS pilot.
           </p>
           <p class="disclaimer">
             Guardrail is an accountability tool, not therapy, medical care, or
